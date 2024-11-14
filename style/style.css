@@ -50,6 +50,7 @@ body {
 
 .one {
   font-size: 4.5rem;
+  color: #ff5733; /* 橙色字体 */
 }
 
 .one > img {
