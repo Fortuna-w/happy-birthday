@@ -5,6 +5,13 @@ html {
 body {
   margin: 0;
   font-family: "Work Sans", sans-serif;
+
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+              url('img/background.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 .container {
@@ -297,3 +304,5 @@ body {
     font-weight: lighter;
   }
 }
+
+
