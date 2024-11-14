@@ -138,6 +138,7 @@ body {
   width: 80px;
   top: -35px;
   left: 41.5%;
+  transform: translateX(-50%); /* 调整帽子水平居中 */
   /* transform: scale(0.1); */
 }
 
