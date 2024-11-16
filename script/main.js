@@ -47,10 +47,13 @@ window.addEventListener("load", () => {
   document.body.appendChild(overlay);
 
   const playMusic = () => {
-    bgMusic.play().catch(error => {
+    bgMusic.play().then(() => {
+      // 音乐播放成功后，移除覆盖层并开始文字动画
+      overlay.remove();
+      fetchData(); // 调用 fetchData() 开始加载数据并展示文字动画
+    }).catch(error => {
       console.log("音频播放失败:", error);
     });
-    overlay.remove(); // 移除覆盖层
     document.removeEventListener("touchstart", playMusic);
     document.removeEventListener("click", playMusic);
   };
@@ -339,4 +342,4 @@ const animationTimeline = () => {
 };
 
 // Run fetch and animation in sequence
-fetchData();
+/* fetchData(); */
