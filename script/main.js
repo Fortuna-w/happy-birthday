@@ -24,6 +24,13 @@ const fetchData = () => {
     });
 };
 
+window.addEventListener('load', () => {
+  const bgMusic = document.querySelector('audio');
+  bgMusic.play().catch(error => {
+    console.log("音频自动播放被浏览器阻止", error);
+  });
+});
+
 // Animation Timeline
 const animationTimeline = () => {
   // Spit chars that needs to be animated individually
