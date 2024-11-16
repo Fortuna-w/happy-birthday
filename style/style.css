@@ -139,7 +139,7 @@ body {
 }
 
 .six .hat {
-  position: absolute;
+  /* position: absolute; */
   width: 80px;
   top: 200px;
   left: 50%;
@@ -150,7 +150,7 @@ body {
 .baloons img {
   display: inline-block;
   position: absolute;
-  width: 200px; /* 调整气球大小 */
+  
   height: auto;
 }
 
