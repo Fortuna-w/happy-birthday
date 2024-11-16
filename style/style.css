@@ -134,6 +134,7 @@ body {
 
 .six img {
   display: inline-block;
+  margin: 0 auto; /* 自动居中 */
   max-width: 70%;
   height: auto;
 }
@@ -141,7 +142,7 @@ body {
 .six .hat {
   /* position: absolute; */
   width: 80px;
-  top: 200px;
+  top: 100px;
   left: 50%;
   transform: translateX(-50%); /* 调整帽子水平居中 */
   /* transform: scale(0.1); */
