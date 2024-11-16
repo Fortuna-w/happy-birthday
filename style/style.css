@@ -134,7 +134,6 @@ body {
 
 .six img {
   display: inline-block;
-  margin: 0 auto; /* 自动居中 */
   max-width: 70%;
   height: auto;
 }
@@ -151,21 +150,9 @@ body {
 .baloons img {
   display: inline-block;
   position: absolute;
-  width: 60vw; /* 使用视口宽度的10% */
   height: auto;
 }
 
-.baloons img:nth-child(even) {
-  left: 10%;
-}
-
-.baloons img:nth-child(odd) {
-  right: 10%;
-}
-
-.baloons img:nth-child(3n + 0) {
-  left: 30%;
-}
 
 .eight svg {
   width: 25px;
