@@ -151,7 +151,7 @@ body {
 .baloons img {
   display: inline-block;
   position: absolute;
-  width: 10vw; /* 使用视口宽度的10% */
+  width: 40vw; /* 使用视口宽度的10% */
   height: auto;
 }
 
@@ -279,13 +279,13 @@ body {
 
 @media screen and (max-width: 768px) {
   .baloons img {
-    width: 15vw; /* 在较小屏幕下增加气球的相对宽度 */
+    width: 40vw; /* 在较小屏幕下增加气球的相对宽度 */
   }
 }
 
 @media screen and (min-width: 1200px) {
   .baloons img {
-    width: 8vw; /* 在较大屏幕下减小气球的相对宽度 */
+    width: 40vw; /* 在较大屏幕下减小气球的相对宽度 */
   }
 }
 
