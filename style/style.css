@@ -264,18 +264,6 @@ body {
   }
 }
 
-@media screen and (max-width: 768px) {
-  .baloons img {
-    width: 60vw; /* 在较小屏幕下增加气球的相对宽度 */
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .baloons img {
-    width: 60vw; /* 在较大屏幕下减小气球的相对宽度 */
-  }
-}
-
 @media screen and (max-width: 500px) {
   .container {
     width: 90%;
