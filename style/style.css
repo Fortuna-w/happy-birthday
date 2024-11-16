@@ -141,10 +141,11 @@ body {
 .six .hat {
   /* position: absolute; */
   width: 80px;
-  top: -30px;
-  left: 50%;
-  transform: translateX(-50%); /* 调整帽子水平居中 */
+  top: -35px;
+  left: 41.5%;
+  /* transform: translateX(-50%);  调整帽子水平居中 */
   /* transform: scale(0.1); */
+  
 }
 
 .baloons img {
@@ -253,25 +254,25 @@ body {
 /* Media Queries */
 @media screen and (max-height: 1000px) {
   .six .hat {
-    left: 50%;
+    left: 40%;
   }
 }
 
 @media screen and (max-height: 800px) {
   .six .hat {
-    left: 50%;
+    left: 40%;
   }
 }
 
 @media screen and (max-height: 700px) {
   .six .hat {
-    left: 50%;
+    left: 40%;
   }
 }
 
 @media screen and (max-height: 850px) and (max-width: 450px) {
   .six .hat {
-    left: 50%;
+    left: 40%;
   }
 }
 
