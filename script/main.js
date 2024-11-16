@@ -24,10 +24,33 @@ const fetchData = () => {
     });
 };
 
-window.addEventListener('load', () => {
-  const bgMusic = document.querySelector('audio');
-  bgMusic.play().catch(error => {
-    console.log("音频自动播放被浏览器阻止", error);
+window.addEventListener("load", () => {
+  const bgMusic = document.getElementById("bg-music");
+
+  // 创建全屏点击区域
+  const overlay = document.createElement("div");
+  overlay.style.position = "fixed";
+  overlay.style.top = 0;
+  overlay.style.left = 0;
+  overlay.style.width = "100%";
+  overlay.style.height = "100%";
+  overlay.style.background = "rgba(0, 0, 0, 0.5)";
+  overlay.style.zIndex = "1000";
+  overlay.style.cursor = "pointer";
+  overlay.innerText = "点击任意位置播放音乐";
+  overlay.style.color = "#fff";
+  overlay.style.display = "flex";
+  overlay.style.alignItems = "center";
+  overlay.style.justifyContent = "center";
+  overlay.style.fontSize = "24px";
+  
+  document.body.appendChild(overlay);
+
+  overlay.addEventListener("click", () => {
+    bgMusic.play().catch(error => {
+      console.log("音频播放失败:", error);
+    });
+    overlay.remove(); // 移除点击区域
   });
 });
 
