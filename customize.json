@@ -1,10 +1,10 @@
 {
   "greeting": "Hi",
-  "name": "王老师！",
-  "greetingText": "I really like your name btw!",
+  "name": "王老师",
+  "greetingText": "In this autumn, we met!",
   "wishText": "May the sunny day always be with you! :)",
   "imagePath": "img/xxw.png",
-  "text1": "It's your birthday!!! :D",
+  "text1": "Today is your birthday!!! :D",
   "textInChatBox": "Happy birthday to you!! Yeee! Many many happy blah...",
   "sendButtonLabel": "Send",
   "text2": "That's what I was going to do.",
