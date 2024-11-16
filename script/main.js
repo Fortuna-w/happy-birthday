@@ -42,7 +42,7 @@ window.addEventListener("load", () => {
   overlay.style.justifyContent = "center";
   overlay.style.color = "#fff";
   overlay.style.fontSize = "24px";
-  overlay.innerText = "点击屏幕以播放音乐";
+  overlay.innerText = "小小王亲启！";
   
   document.body.appendChild(overlay);
 
