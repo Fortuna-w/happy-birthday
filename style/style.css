@@ -63,10 +63,12 @@ body {
 .two {
   font-size: 1.2rem;
   font-weight: lighter;
+  color: #ff5733; /* 橙色字体 */
 }
 
 .three {
   font-size: 3rem;
+  color: #ff5733; /* 橙色字体 */
 }
 
 .four .text-box {
@@ -76,6 +78,7 @@ body {
   border-radius: 5px;
   padding: 10px;
   position: relative;
+  color: #ff5733; /* 橙色字体 */
 }
 
 .text-box p {
@@ -102,6 +105,7 @@ body {
   position: absolute;
   left: 0;
   right: 0;
+  color: #ff5733; /* 橙色字体 */
 }
 
 .idea-3 strong {
@@ -137,7 +141,7 @@ body {
 .six .hat {
   position: absolute;
   width: 80px;
-  top: -50px;
+  top: -100px;
   left: 41.5%;
   transform: translateX(-50%); /* 调整帽子水平居中 */
   /* transform: scale(0.1); */
@@ -299,15 +303,18 @@ body {
 
   .wish-hbd {
     font-size: 2.2em;
+    color: #ff5733; /* 橙色字体 */
   }
 
   .wish h5 {
     font-size: 1.4rem;
+    color: #ff5733; /* 橙色字体 */
   }
 
   .nine p {
     font-size: 1.5rem;
     font-weight: lighter;
+    color: #ff5733; /* 橙色字体 */
   }
 }
 
