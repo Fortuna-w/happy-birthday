@@ -141,8 +141,8 @@ body {
 .six .hat {
   position: absolute;
   width: 80px;
-  top: -100px;
-  left: 41.5%;
+  top: 100px;
+  left: 50%;
   transform: translateX(-50%); /* 调整帽子水平居中 */
   /* transform: scale(0.1); */
 }
@@ -150,14 +150,16 @@ body {
 .baloons img {
   display: inline-block;
   position: absolute;
+  width: 50px; /* 调整气球大小 */
+  height: auto;
 }
 
 .baloons img:nth-child(even) {
-  left: -10%;
+  left: 10%;
 }
 
 .baloons img:nth-child(odd) {
-  right: -10%;
+  right: 10%;
 }
 
 .baloons img:nth-child(3n + 0) {
