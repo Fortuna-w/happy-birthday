@@ -27,7 +27,7 @@ const fetchData = () => {
 window.addEventListener("load", () => {
   const bgMusic = document.getElementById("bg-music");
 
-  // 创建全屏点击区域
+  // 创建一个全屏覆盖层，用于提示用户点击
   const overlay = document.createElement("div");
   overlay.style.position = "fixed";
   overlay.style.top = 0;
@@ -37,21 +37,27 @@ window.addEventListener("load", () => {
   overlay.style.background = "rgba(0, 0, 0, 0.5)";
   overlay.style.zIndex = "1000";
   overlay.style.cursor = "pointer";
-  overlay.innerText = "点击任意位置播放音乐";
-  overlay.style.color = "#fff";
   overlay.style.display = "flex";
   overlay.style.alignItems = "center";
   overlay.style.justifyContent = "center";
+  overlay.style.color = "#fff";
   overlay.style.fontSize = "24px";
+  overlay.innerText = "点击屏幕以播放音乐";
   
   document.body.appendChild(overlay);
 
-  overlay.addEventListener("click", () => {
+  const playMusic = () => {
     bgMusic.play().catch(error => {
       console.log("音频播放失败:", error);
     });
-    overlay.remove(); // 移除点击区域
-  });
+    overlay.remove(); // 移除覆盖层
+    document.removeEventListener("touchstart", playMusic);
+    document.removeEventListener("click", playMusic);
+  };
+
+  // 在手机上使用 touchstart 事件，在桌面上使用 click 事件
+  document.addEventListener("touchstart", playMusic);
+  document.addEventListener("click", playMusic);
 });
 
 // Animation Timeline
