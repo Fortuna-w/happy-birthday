@@ -468,6 +468,12 @@ body {
     color: #ff5733; /* 橙色字体 */
   }
 
+  .ten p {
+    font-size: 1.5rem;
+    font-weight: lighter;
+    color: #ff5733; /* 橙色字体 */
+  }
+  
   .nine p {
     font-size: 1.5rem;
     font-weight: lighter;
