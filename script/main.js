@@ -304,13 +304,6 @@ const animationTimeline = () => {
       },
       "party"
     )
-    // 在照片消失后，插入蛋糕动画
-  .to("#cake-container", 1, {
-    opacity: 1,
-    y: 0,
-    ease: "bounce.out"
-  }, "+=0.5") // 再次增加 0.5 秒的延迟，确保照片完全消失后蛋糕出现
-    
     .staggerTo(
       ".eight svg",
       1.5,
@@ -323,7 +316,12 @@ const animationTimeline = () => {
       },
       0.3
     )
-    
+    // 插入蛋糕动画：星星动画结束后显示蛋糕
+    .to("#cake-container", 1, {
+      opacity: 1,
+      y: 0,
+      ease: "bounce.out"
+    }, "+=0.5") // 延迟0.5秒，确保星星动画结束后蛋糕出现
     .to(".six", 0.5, {
       opacity: 0,
       y: 30,
