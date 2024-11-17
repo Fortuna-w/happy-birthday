@@ -317,7 +317,12 @@ const animationTimeline = () => {
       0.3
     )
   
-   
+   // 插入 text6 的动画
+    .from(".ten p", 0.7, {
+      opacity: 0,
+      y: 20,
+      ease: Expo.easeOut
+    }, "+=0.5")  // 延迟0.5秒，确保星星动画结束后显示 text6
      // 插入蛋糕动画：星星动画结束后显示蛋糕
     .to(".cake-container", 1, {
       opacity: 1,
