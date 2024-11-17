@@ -316,6 +316,31 @@ const animationTimeline = () => {
       },
       0.3
     )
+
+    // 插入蛋糕动画开始
+    .from(
+      "#cake",
+      1,
+      {
+        opacity: 0,
+        y: 50,
+        ease: Bounce.easeOut
+      },
+      "+=0.5"  // 延迟显示蛋糕
+    )
+    .staggerFrom(
+      ".velas .fuego",
+      0.5,
+      {
+        scale: 0,
+        opacity: 0,
+        y: -10,
+        ease: Bounce.easeOut
+      },
+      0.2
+    )
+    // 插入蛋糕动画结束
+    
     .to(".six", 0.5, {
       opacity: 0,
       y: 30,
