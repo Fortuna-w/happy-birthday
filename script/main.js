@@ -324,7 +324,7 @@ const animationTimeline = () => {
         rotation: 90
       },
       "+=1"
-    );
+    )
    
      // 插入蛋糕动画：星星动画结束后显示蛋糕
     .to(".cake-container", 1, {
