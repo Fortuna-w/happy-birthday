@@ -141,7 +141,7 @@ body {
 .six .hat {
   position: absolute;
   width: 80px;
-  top: 50px;
+  top: 60px;
   left: 30px;
   /* transform: translateX(-50%);  调整帽子水平居中 */
   /* transform: scale(0.1); */
@@ -154,11 +154,11 @@ body {
 }
 
 .baloons img:nth-child(even) {
-  left: 10%;
+  left: 20%;
 }
 
 .baloons img:nth-child(odd) {
-  right: 10%;
+  right: 20%;
 }
 
 .baloons img:nth-child(3n + 0) {
