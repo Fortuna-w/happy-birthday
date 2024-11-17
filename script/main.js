@@ -316,6 +316,20 @@ const animationTimeline = () => {
       },
       0.3
     )
+    .from(".ten", 0.7, {
+      opacity: 0,
+      y: 10
+    })
+    .to(
+      ".ten",
+      0.7,
+      {
+        opacity: 0,
+        y: 10
+      },
+      "+=2.5"
+    )
+   
      // 插入蛋糕动画：星星动画结束后显示蛋糕
     .to(".cake-container", 1, {
       opacity: 1,
