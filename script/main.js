@@ -317,7 +317,7 @@ const animationTimeline = () => {
       0.3
     )
     // 插入蛋糕动画：星星动画结束后显示蛋糕的各个组件逐一出现
-.staggerFrom(".cake-container", 1, {
+.staggerTo(".cake-container", 1, {
   opacity: 1,
   y: 50,
   ease: "bounce.out"
