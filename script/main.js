@@ -321,7 +321,7 @@ const animationTimeline = () => {
       opacity: 1,
       y: 0,
       ease: "bounce.out"
-    }, "+=18") // 延迟0.5秒，确保星星动画结束后蛋糕出现
+    }, "+=10") // 延迟0.5秒，确保星星动画结束后蛋糕出现
     .to(".six", 0.5, {
       opacity: 0,
       y: 30,
