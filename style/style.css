@@ -141,8 +141,8 @@ body {
 .six .hat {
   position: absolute;
   width: 80px;
-  top: 65px;
-  left: 28px;
+  top: 75px;
+  left: 33px;
   /* transform: translateX(-50%);  调整帽子水平居中 */
   /* transform: scale(0.1); */
   
