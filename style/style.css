@@ -242,9 +242,16 @@ body {
   margin: 10px 0 0;
 }
 
+.ten p {
+    font-size: 1.5rem;
+    font-weight: lighter;
+    color: #ff5733; /* 橙色字体 */
+  }
+
 .nine p {
   font-size: 2rem;
   font-weight: lighter;
+  color: #ff5733; /* 橙色字体 */
 }
 
 #replay {
