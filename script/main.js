@@ -304,9 +304,12 @@ const animationTimeline = () => {
       },
       "party"
     )
-
-    // 插入蛋糕动画：在 wish-hbd 和 wish h5 动画完成后，出现蛋糕
-    .to("#cake-container", 1, { opacity: 1, y: 0, ease: "bounce.out" }, "+=1") // 延迟1秒后蛋糕出现
+    // 在照片消失后，插入蛋糕动画
+  .to("#cake-container", 1, {
+    opacity: 1,
+    y: 0,
+    ease: "bounce.out"
+  }, "+=0.5") // 再次增加 0.5 秒的延迟，确保照片完全消失后蛋糕出现
     
     .staggerTo(
       ".eight svg",
