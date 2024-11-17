@@ -256,10 +256,10 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* opacity: 0;  初始隐藏 */
+  opacity: 0; /* 初始隐藏 */
   transform: translateY(50px); /* 初始位置，用于动画 */
-  /* transition: opacity 1s ease, transform 1s ease;  过渡效果 */
-  transition: transform 1s ease; /* 只保留位置变换的过渡效果 */
+  transition: opacity 1s ease, transform 1s ease;  /* 过渡效果 */
+  /*transition: transform 1s ease;  只保留位置变换的过渡效果 */
   margin-top: 2em;
 }
 
