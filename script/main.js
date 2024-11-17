@@ -316,16 +316,7 @@ const animationTimeline = () => {
       },
       0.3
     )
-    .staggerFrom(".ten", 1, ideaTextTrans, 1.2)
-    .to(
-      ".ten",
-      0.7,
-      {
-        opacity: 0,
-        y: 10
-      },
-      "-=1"
-    )
+  
    
      // 插入蛋糕动画：星星动画结束后显示蛋糕
     .to(".cake-container", 1, {
