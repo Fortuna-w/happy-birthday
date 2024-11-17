@@ -306,7 +306,7 @@ const animationTimeline = () => {
     )
 
     // 插入蛋糕动画：在 wish-hbd 和 wish h5 动画完成后，出现蛋糕
-    .to("#cake-container", 1, { opacity: 1, y: 0, ease: "bounce.out" }, "+=0.5") // 延迟0.5秒，蛋糕动画在派对文字动画后出现
+    .to("#cake-container", 1, { opacity: 1, y: 0, ease: "bounce.out" }, "+=1") // 延迟1秒后蛋糕出现
     
     .staggerTo(
       ".eight svg",
