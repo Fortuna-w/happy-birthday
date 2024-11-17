@@ -317,11 +317,11 @@ const animationTimeline = () => {
       0.3
     )
     // 插入蛋糕动画：星星动画结束后显示蛋糕
-    .to(".cake-container", 1, {
+    .staggerFrom(".cake-container", 1, {
       opacity: 1,
-      y: 0,
+      y: 50,
       ease: "bounce.out"
-    }, "+=1.5") // 延迟0.5秒，确保星星动画结束后蛋糕出现
+    }, 0.2， "+=3") // 延迟0.5秒，确保星星动画结束后蛋糕出现
     .to(".six", 0.5, {
       opacity: 0,
       y: 30,
