@@ -316,14 +316,15 @@ const animationTimeline = () => {
       },
       0.3
     )
-    .staggerFrom(".nine p", 1, ideaTextTrans, 1.2)
+    .staggerFrom(".ten", 1, ideaTextTrans, 1.2)
     .to(
-      ".last-smile",
-      0.5,
+      ".ten",
+      0.7,
       {
-        rotation: 90
+        opacity: 0,
+        y: 10
       },
-      "+=1"
+      "-=1"
     )
    
      // 插入蛋糕动画：星星动画结束后显示蛋糕
