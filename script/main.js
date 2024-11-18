@@ -97,10 +97,6 @@ const animationTimeline = () => {
     .to(".container", 0.1, {
       visibility: "visible"
     })
-
-    .to(".cake-container", 1, {
-      y: 0,
-    }) // 延迟执行，确保先前动画完成后进行
     
     .from(".one", 0.7, {
       opacity: 0,
@@ -337,9 +333,9 @@ const animationTimeline = () => {
       "#cake",
       1,
       {
-        opacity: 0,
+        opacity: 1,
         y: 50,
-        ease: Bounce.easeOut
+        /*ease: Bounce.easeOut*/
       },
       "+=0.5"  // 延迟显示蛋糕
     )
