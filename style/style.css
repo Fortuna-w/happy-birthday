@@ -409,28 +409,28 @@ body {
 @media screen and (max-height: 1000px) {
   .six .hat {
     top: 40px !important; /* 移动端位置调整 */
-    left: 20px !important; /* 移动端位置调整 */
+    left: 40px !important; /* 移动端位置调整 */
   }
 }
 
 @media screen and (max-height: 800px) {
   .six .hat {
     top: 40px !important; /* 移动端位置调整 */
-    left: 20px !important; /* 移动端位置调整 */
+    left: 40px !important; /* 移动端位置调整 */
   }
 }
 
 @media screen and (max-height: 700px) {
   .six .hat {
     top: 40px !important; /* 移动端位置调整 */
-    left: 20px !important; /* 移动端位置调整 */
+    left: 40px !important; /* 移动端位置调整 */
   }
 }
 
 @media screen and (max-height: 850px) and (max-width: 450px) {
   .six .hat {
     top: 40px !important; /* 移动端位置调整 */
-    left: 20px !important; /* 移动端位置调整 */
+    left: 40px !important; /* 移动端位置调整 */
   }
 }
 
