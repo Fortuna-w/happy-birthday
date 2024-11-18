@@ -99,10 +99,8 @@ const animationTimeline = () => {
     })
 
     .to(".cake-container", 1, {
-      opacity: 1,
       y: 0,
-      ease: "bounce.out" // 整体淡入并移动到目标位置
-    }, "+=0.5") // 延迟执行，确保先前动画完成后进行
+    }) // 延迟执行，确保先前动画完成后进行
     
     .from(".one", 0.7, {
       opacity: 0,
