@@ -328,28 +328,11 @@ const animationTimeline = () => {
     .from(".ten p", 0.7, ideaTextTrans, "+=0.5")  // 延迟0.5秒，确保星星动画结束后显示 text6
     .to(".ten p", 0.7, ideaTextTransLeave, "+=1")  // 延迟1.5秒后，text6 消失
 
-    .from(
-      "#cake",
-      1,
-      {
-        opacity: 1,
-        y: 50,
-        /*ease: Bounce.easeOut*/
-      },
-      "+=0.5"
-    )
-    .staggerFrom(
-      ".velas .fuego",
-      0.5,
-      {
-        scale: 0,
-        opacity: 0,
-        y: -10,
-        ease: Bounce.easeOut
-      },
-      0.2
-    )
-    // 插入蛋糕动画结束
+    .to(".cake-container", 1, {
+      opacity: 1,
+      y: 0,
+      ease: "bounce.out"
+    }, "+=1.5") // 延迟0.5秒，确保星星动画结束后蛋糕出现
 
     
     .staggerFrom(".nine p", 1, ideaTextTrans, 1.2)
