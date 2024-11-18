@@ -327,15 +327,29 @@ const animationTimeline = () => {
     .from(".ten p", 0.7, ideaTextTrans, "+=0.5")  // 延迟0.5秒，确保星星动画结束后显示 text6
     .to(".ten p", 0.7, ideaTextTransLeave, "+=1.5")  // 延迟1.5秒后，text6 消失
 
-     // 蛋糕入场特效
-    .fromTo(".cake-container", 1, {
-      opacity: 0,
-      scale: 0  // 初始隐藏
-    }, {
-      opacity: 1,
-      scale: 1,
-      ease: "bounce.out"  // 使用弹跳效果进入场景
-    }, "+=0.5") // 延迟0.5秒，确保蛋糕在 text6 消失后入场
+     // 插入蛋糕动画开始
+    .from(
+      "#cake",
+      1,
+      {
+        opacity: 0,
+        y: 50,
+        ease: Bounce.easeOut
+      },
+      "+=0.5"  // 延迟显示蛋糕
+    )
+    .staggerFrom(
+      ".velas .fuego",
+      0.5,
+      {
+        scale: 0,
+        opacity: 0,
+        y: -10,
+        ease: Bounce.easeOut
+      },
+      0.2
+    )
+    // 插入蛋糕动画结束
     
     .staggerFrom(".nine p", 1, ideaTextTrans, 1.2)
     .to(
