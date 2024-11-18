@@ -141,8 +141,8 @@ body {
 .six .hat {
   position: absolute;
   width: 80px;
-  top: 30px;
-  left: 50px;
+  top: 20px;
+  left: 70px;
   transform: translate(10px, 10px); /* 微调位置，向左和向上移动10px */
   
 }
