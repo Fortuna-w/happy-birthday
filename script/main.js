@@ -98,43 +98,11 @@ const animationTimeline = () => {
       visibility: "visible"
     })
 
-    // 插入蛋糕动画开始
-.from(
-  "#cake", // 让蛋糕主体先从下往上出现
-  1,
-  {
-    opacity: 1,
-    y: 50,
-    ease: Bounce.easeOut
-  },
-  "+=0.5"  // 延迟显示蛋糕
-)
-// 先显示蜡烛主体部分
-.staggerFrom(
-  ".velas", // 蜡烛主体
-  0.5,
-  {
-    scale: 0,
-    opacity: 0,
-    y: -20,
-    ease: Bounce.easeOut
-  },
-  0.2 // 每根蜡烛依次出现
-)
-// 再依次点燃蜡烛上的火焰
-.staggerFrom(
-  ".velas .fuego", // 火焰部分
-  0.5,
-  {
-    scale: 0,
-    opacity: 0,
-    y: -10,
-    ease: Bounce.easeOut
-  },
-  0.3 // 每个火焰依次点燃
-)
-// 插入蛋糕动画结束
-
+    .to(".cake-container", 1, {
+      opacity: 1,
+      y: 0,
+      ease: "bounce.out" // 整体淡入并移动到目标位置
+    }, "+=0.5") // 延迟执行，确保先前动画完成后进行
     
     .from(".one", 0.7, {
       opacity: 0,
