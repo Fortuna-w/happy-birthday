@@ -142,8 +142,8 @@ body {
   position: absolute;
   width: 80px;
   top: 40px;
-  left: 20px;
-  transform: translate(-5px, -5px); /* 微调位置，向左和向上移动10px */
+  left: 40px;
+  transform: translate(10px, 10px); /* 微调位置，向左和向上移动10px */
   /* transform: scale(0.1); */
   
 }
