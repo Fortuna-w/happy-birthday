@@ -316,8 +316,14 @@ const animationTimeline = () => {
       },
       0.3
     )
-  
-   // 插入 text6 的进场和退场特效
+    
+    .to(".six", 0.5, {
+      opacity: 0,
+      y: 30,
+      zIndex: "-1"
+    })
+
+    // 插入 text6 的进场和退场特效
     .from(".ten p", 0.7, ideaTextTrans, "+=0.5")  // 延迟0.5秒，确保星星动画结束后显示 text6
     .to(".ten p", 0.7, ideaTextTransLeave, "+=1.5")  // 延迟1.5秒后，text6 消失
 
@@ -331,11 +337,6 @@ const animationTimeline = () => {
       ease: "bounce.out"  // 使用弹跳效果进入场景
     }, "+=0.5") // 延迟0.5秒，确保蛋糕在 text6 消失后入场
     
-    .to(".six", 0.5, {
-      opacity: 0,
-      y: 30,
-      zIndex: "-1"
-    })
     .staggerFrom(".nine p", 1, ideaTextTrans, 1.2)
     .to(
       ".last-smile",
