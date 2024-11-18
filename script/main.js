@@ -326,15 +326,15 @@ const animationTimeline = () => {
 
     // 插入 text6 的进场和退场特效
     .from(".ten p", 0.7, ideaTextTrans, "+=0.5")
-    .to(".ten p", 0.7, ideaTextTransLeave, "+=1")
+    .to(".ten p", 0.7, ideaTextTransLeave, "+=2")
 
     .to(".cake-container", 1, {
       opacity: 1,
       y: 0,
       ease: "bounce.out"
-    }, "+=0.5")
+    }, "+=1.5")
     
-    .staggerFrom(".nine p", 1, ideaTextTrans, 1.2, "+=2")
+    .staggerFrom(".nine p", 1, ideaTextTrans, 1.2)
     .to(
       ".last-smile",
       0.5,
