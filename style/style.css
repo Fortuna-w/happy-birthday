@@ -140,10 +140,10 @@ body {
 
 .six .hat {
   position: absolute;
-  width: 60px;
-  top: 5px;
+  width: 40px;
+  top: 40px;
   left: 120px;
-  transform: translate(2px, -95px);
+  transform: translate(2px, 0px);
   
 }
 
