@@ -332,7 +332,7 @@ const animationTimeline = () => {
       opacity: 1,
       y: 0,
       ease: "bounce.out"
-    },"+=2")
+    },"+=1")
     
     
     .staggerFrom(".nine p", 1, ideaTextTrans, 1.2, "+=2")
