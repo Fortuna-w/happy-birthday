@@ -338,7 +338,6 @@ const animationTimeline = () => {
         /*ease: Bounce.easeOut*/
       },
       "+=0.5"  // 延迟显示蛋糕
-      }
     )
     .staggerFrom(
       ".velas .fuego",
