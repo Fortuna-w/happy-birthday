@@ -325,16 +325,16 @@ const animationTimeline = () => {
     })
 
     // 插入 text6 的进场和退场特效
-    .from(".ten p", 0.7, ideaTextTrans, "+=0.5")  // 延迟0.5秒，确保星星动画结束后显示 text6
-    .to(".ten p", 0.7, ideaTextTransLeave, "+=1")  // 延迟1.5秒后，text6 消失
+    .from(".ten p", 0.7, ideaTextTrans, "+=0.5")
+    .to(".ten p", 0.7, ideaTextTransLeave, "+=1")
 
     .to(".cake-container", 1, {
       opacity: 1,
       y: 0,
       ease: "bounce.out"
-    }, "+=0.5") // 再次增加 0.5 秒的延迟，确保照片完全消失后蛋糕出现
+    }, "+=0.5")
     
-    .staggerFrom(".nine p", 1, ideaTextTrans, 1.2)
+    .staggerFrom(".nine p", 1, ideaTextTrans, 1.2, "+=2")
     .to(
       ".last-smile",
       0.5,
