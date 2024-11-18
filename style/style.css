@@ -403,6 +403,7 @@ body {
   font-size: 1.4em;
 }
 
+
 /* Media Queries */
 @media screen and (max-height: 1000px) {
   .six .hat {
