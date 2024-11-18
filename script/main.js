@@ -332,10 +332,10 @@ const animationTimeline = () => {
       opacity: 1,
       y: 0,
       ease: "bounce.out"
-    },"+=1")
+    },"+=0.5")
     
     
-    .staggerFrom(".nine p", 1, ideaTextTrans, 1.2, "+=2")
+    .staggerFrom(".nine p", 1, ideaTextTrans, 1.2, "+=3")
     .to(
       ".last-smile",
       0.5,
