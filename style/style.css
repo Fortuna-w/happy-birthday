@@ -235,19 +235,22 @@ body {
 /* Media Queries */
 @media screen and (max-height: 1000px) {
   .six .hat {
-    left: 40%;
+    top: 40px !important; /* 移动端位置调整 */
+    left: 20px !important; /* 移动端位置调整 */
   }
 }
 
 @media screen and (max-height: 800px) {
   .six .hat {
-    left: 37%;
+    top: 40px !important; /* 移动端位置调整 */
+    left: 20px !important; /* 移动端位置调整 */
   }
 }
 
 @media screen and (max-height: 700px) {
   .six .hat {
-    left: 32%;
+    top: 40px !important; /* 移动端位置调整 */
+    left: 20px !important; /* 移动端位置调整 */
   }
 }
 
