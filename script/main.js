@@ -103,7 +103,7 @@ const animationTimeline = () => {
   "#cake", // 让蛋糕主体先从下往上出现
   1,
   {
-    opacity: 0,
+    opacity: 1,
     y: 50,
     ease: Bounce.easeOut
   },
