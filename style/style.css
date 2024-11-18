@@ -317,6 +317,7 @@ body {
   margin-left: -2.2px;
   width: 6.66666667px;
   height: 18px;
+  transform: translateX(-50%); /* 居中火焰 */
 }
 
 .fuego:nth-child(1) {
